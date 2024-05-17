@@ -85,6 +85,9 @@
 
 .currentSelectedCharacter {
 
+    background-image: url("./assets/Basic Humanoid Animations/halfling assassin/HalflingAssassin.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
     position: relative;
     top: 0px;
     width: 40vw;
