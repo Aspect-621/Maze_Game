@@ -17,16 +17,147 @@
     <title>Labyrinth</title>
     <link rel="preload" href="Mirrorster.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="combat.css">
+
     <script src="script.js"></script>
 </head>
 
+<img id="startImage" alt="Start">
 
 <body onkeydown="moveImage(event)">
 
+
+
     <center>
+        <div class="parent-combatMainClass">
+            <div class="combatMainClass">
+                <div class="parentDivCombatData">
+                    <div class="parentPlayerCombatClass">
+                        <div class="playerDescriptionData">
+                            <h1>Skill Name</h1>
+                            <p>Description Text Here</p>
+
+                        </div>
+                        <div class="parentPlayerCombat">
+                            <div class="statsData">
+                                <h1> Character Name</h1>
+                                <div class="statsOne">
+                                    <p>Health</p>
+                                    <p>Strength</p>
+                                    <p>Luck</p>
+                                </div>
+                                <div class="statsTwo">
+                                    <p>Evasion</p>
+                                    <p>Armor</p>
+                                    <p>Vitality</p>
+                                </div>
+
+                            </div>
+                            <div class="parentCombatSkills">
+                                <div class="characterCombat">
+                                    <div class="characterGIF"></div>
+                                </div>
+                                <div class="combatAndSkills">
+                                    <div class="skillList">
+                                        <div class="skillOne">
+                                            <div class="childSkillRadioOne">
+                                                <input type="radio" id="skillOne" name="skills">
+                                                <label for="skillOne">Skill One</label>
+                                            </div>
+                                        </div>
+                                        <div class="skillTwo">
+                                            <div class="childSkillRadioTwo">
+                                                <input type="radio" id="skillTwo" name="skills">
+                                                <label for="skillTwo">Skill Two</label>
+                                            </div>
+                                        </div>
+                                        <div class="skillThree">
+                                            <div class="childSkillRadioThree">
+                                                <input type="radio" id="skillThree" name="skills">
+                                                <label for="skillThree">Skill Three</label>
+                                            </div>
+                                        </div>
+                                        <div class="skillFour">
+                                            <div class="childSkillRadioFour">
+                                                <input type="radio" id="skillFour" name="skills">
+                                                <label for="skillFour">Skill Four</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="buttonAttackEtc">
+                                        <br>
+                                        <input class="combatButtons"type="button" value="Attack" onclick="">
+                                        <br><br>
+                                        <input class="combatButtons" type="button" value="Description" onclick="">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="parentEnemyCombatClass">
+                        <div class="parentEnemyCombat">
+
+                            <div class="statsData">
+                                <h1> Enemy Name</h1>
+                                <div class="statsOne">
+                                    <p>Health</p>
+                                    <p>Strength</p>
+                                    <p>Luck</p>
+                                </div>
+                                <div class="statsTwo">
+
+                                    <p>Evasion</p>
+                                    <p>Armor</p>
+                                    <p>Vitality</p>
+                                </div>
+
+                            </div>
+                            <div class="parentCombatSkills">
+                                <div class="characterCombat">
+                                    <div class="characterGIF"></div>
+                                </div>
+                                <div class="combatAndSkills">
+                                    <div class="skillList">
+                                        <div class="skillOne">
+                                            <div class="childSkillRadioOne">
+                                                <p>Skill One</p>
+                                            </div>
+                                        </div>
+                                        <div class="skillTwo">
+                                            <div class="childSkillRadioTwo">
+                                                <p>Skill Two</p>                                            </div>
+                                        </div>
+                                        <div class="skillThree">
+                                            <div class="childSkillRadioThree">
+                                                <p>Skill Three</p>                                            </div>
+                                        </div>
+                                        <div class="skillFour">
+                                            <div class="childSkillRadioFour">
+                                                <p>Skill Four</p>                                            </div>
+                                        </div>
+                                    </div>
+
+                                    </div>
+                                    <div class="buttonAttackEtc"></div>
+
+                                </div>
+                            </div>
+                        </div>
 
 
-    <img id="startImage" alt="Start">
+
+                        <div class="enemyDescriptionData">
+                            <h1>Skill Name</h1>
+                            <p>Description Text Here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+    <center>
         <div class="parentMainClass">
             <div class="mainBody">
 
