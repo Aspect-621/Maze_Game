@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="design.css">
     <link rel="stylesheet" href="combat.css">
     <link rel="stylesheet" href="charSelect.css">
+    <script src="scriptCharSelect.js"></script>
 
     <script src="script.js"></script>
 </head>
@@ -102,7 +103,7 @@
                             <tr>
                                 <td >
                                     <div class="radio-wrapper-charClass">
-                                        <input type="radio" id="archerClass" name="classOfCharacter">
+                                        <input onclick="changeCharSelectedArcher();" type="radio" id="archerClass" name="classOfCharacter">
                                         <label for="archerClass">ARCHER</label>
                                       </div>
                     
@@ -110,14 +111,14 @@
                                 </td>
                                 <td rowspan="3">
 
-                                    <div class="currentSelectedCharacter">
+                                    <div id="currentSelectedCharacterDiv" class="currentSelectedCharacter">
                                     </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <div class="radio-wrapper-charClass">
-                                        <input type="radio" id="warriorClass" name="classOfCharacter">
+                                        <input  onclick="changeCharSelectedWarrior();" type="radio" id="warriorClass" name="classOfCharacter">
                                     <label for="classOfCharacter">WARRIOR</label>
                                 </div>
                     
@@ -126,7 +127,7 @@
                             <tr>
                                 <td>
                                     <div class="radio-wrapper-charClass">
-                                    <input type="radio" id="assasinClass" name="classOfCharacter">
+                                    <input  onclick="changeCharSelectedAssasin();" type="radio" id="assasinClass" name="classOfCharacter">
                                     <label for="classOfCharacter">ASSASIN</label>
                                 </div>
                     

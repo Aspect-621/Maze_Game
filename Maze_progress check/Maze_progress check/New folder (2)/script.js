@@ -493,3 +493,21 @@ document.body.addEventListener('keydown', moveImage);
 
 // Focus the document to ensure it receives key events
 document.body.focus();
+
+
+
+
+function changeCharSelectedArcher(){
+    document.getElementById("currentSelectedCharacterDiv").style.backgroundImage = "url('./assets/Basic Humanoid Animations/goblin archer/GoblinArcher.gif')";
+
+}
+
+function changeCharSelectedWarrior(){
+    document.getElementById("currentSelectedCharacterDiv").style.backgroundImage = "url('./assets/Basic Humanoid Animations/halfling rogue/HalflingRogue.gif')";
+
+}
+
+function changeCharSelectedAssasin(){
+    document.getElementById("currentSelectedCharacterDiv").style.backgroundImage = "url('./assets/Basic Humanoid Animations/halfling assassin/HalflingAssassin.gif')";
+   
+}
