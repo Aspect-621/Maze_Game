@@ -1,0 +1,102 @@
+.parentCharSelectClass {
+    position: absolute;
+    margin: 0px;
+    width: 98vw;
+    height: 96.5vh;
+    z-index: 15;
+    /* background-color: pink; 
+
+    border: 1px solid gray;
+    */
+}
+
+.charSelectbg {
+    width: 98vw;
+    height: 96.5vh;
+    background-repeat: no-repeat;
+    background-image: url('assets/img/charSelect.png');
+    opacity: 1;
+}
+
+.parentCharSelect {
+    position: relative;
+    top: 25px;
+    width: 94vw;
+    height: 90.5vh;
+    /* background-color: blue; */
+
+}
+
+.parentStats {
+    position: absolute;
+    top: 0px;
+    width: 37.6vw;
+    height: 90.5vh;
+    background-color: #FFBD59;
+    border: 10px solid black;
+    border-radius: 5%;
+}
+
+
+.charClassSelect {
+
+    position: absolute;
+    right: 0px;
+    width: 52.4vw;
+    height: 90.5vh;
+    background-color: #FFBD59;
+    border: 10px solid black;
+    border-radius: 5%;
+}
+
+.charSelectTable {
+    width: 37.6vw;
+    height: 75.5vh;
+    font-size: 30px;
+    font-family: Eleanora;
+
+}
+
+.charSelectTable td {
+
+    text-align: center;
+}
+
+.createButton {
+    font-size: 40px;
+    font-family: Eleanora;
+    height: 50px;
+    width: auto;
+    background-color: #ffa319; 
+    border-radius: 20px;
+}
+
+.charSelectClassTable {
+    width: 37.6vw;
+    height: 75.5vh;
+    font-size: 30px;
+    font-family: Eleanora;
+}
+
+.charSelectClassTable td {
+    text-align: center;
+
+}
+
+.currentSelectedCharacter {
+
+    position: relative;
+    top: 0px;
+    width: 40vw;
+    height: 80vh;
+   /* background-color: pink; */
+}
+
+.radio-wrapper-charClass {
+    display: flex;
+    align-items: center;
+}
+
+.radio-wrapper-charClass input[type="radio"] {
+    margin-right: 10px;
+}

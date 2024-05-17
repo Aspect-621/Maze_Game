@@ -18,6 +18,7 @@
     <link rel="preload" href="Mirrorster.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="design.css">
     <link rel="stylesheet" href="combat.css">
+    <link rel="stylesheet" href="charSelect.css">
 
     <script src="script.js"></script>
 </head>
@@ -25,8 +26,129 @@
 <img id="startImage" alt="Start">
 
 <body onkeydown="moveImage(event)">
+<center>
+    <div class="parentCharSelectClass">
+        <div class="charSelectbg">
+
+            <div class="parentCharSelect">
+                <div class="parentStats">
+                    <div class="stats">
+                        <center>
+                            <table class="charSelectTable">
+                                <thead>
+                                    <tr>
+                                        <th colspan="1">Stat</th>
+                                        <th></th>
+                                        <th>-</th>
+                                        <th>+</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Strength</td>
+                                        <td><span class="statValue">0</span></td>
+                                        <td><button type="button">-</button></td>
+                                        <td><button type="button">+</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Luck</td>
+                                        <td><span class="statValue">0</span></td>
+                                        <td><button type="button">-</button></td>
+                                        <td><button type="button">+</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Evasion</td>
+                                        <td><span class="statValue">0</span></td>
+                                        <td><button type="button">-</button></td>
+                                        <td><button type="button">+</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Vitality</td>
+                                        <td><span class="statValue">0</span></td>
+                                        <td><button type="button">-</button></td>
+                                        <td><button type="button">+</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dexterity</td>
+                                        <td><span class="statValue">0</span></td>
+                                        <td><button type="button">-</button></td>
+                                        <td><button type="button">+</button></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th colspan="1">Remaining Points:</th>
+                                        <th colspan="1" id="remainingPoints">0</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </center>
+
+                    </div>
+                    <div class="buttonBelowSubmit">
+                        <br>
+                        <br>
+                        <br>
+                        <button class="createButton" type="button">Create Character</button>
+                    </div>
+                </div>
+                <div class="charClassSelect">
+
+                    <center>
+                        <table class="charSelectClassTable">
+                            <tr>
+                                <th colspan="2">CHARACTER CLASS</th>
+                            </tr>
+                            <tr>
+                                <td >
+                                    <div class="radio-wrapper-charClass">
+                                        <input type="radio" id="archerClass" name="classOfCharacter">
+                                        <label for="archerClass">ARCHER</label>
+                                      </div>
+                    
+                    
+                                </td>
+                                <td rowspan="3">
+                    
+                                    <div class="currentSelectedCharacter">
+                    
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio-wrapper-charClass">
+                                        <input type="radio" id="warriorClass" name="classOfCharacter">
+                                    <label for="classOfCharacter">WARRIOR</label>
+                                </div>
+                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="radio-wrapper-charClass">
+                                    <input type="radio" id="assasinClass" name="classOfCharacter">
+                                    <label for="classOfCharacter">ASSASIN</label>
+                                </div>
+                    
+                    
+                                </td>
+                            </tr>
+                        </table>
+                    </center>
+                    <div class="choiceClass">
 
 
+                    </div>
+                    <div class="charImageCurrent">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</center>
 
     <center>
         <div class="parent-combatMainClass">
@@ -160,7 +282,6 @@
     <center>
         <div class="parentMainClass">
             <div class="mainBody">
-
                 <div class="leftBricks">
                     <div class="leftData">
                         <div class="parentTextLeft">
@@ -213,7 +334,7 @@
                     </div>
                 </div>
                 <div class="tableFinalMaze">
-                    <table id="mazeTable">
+                    <table id="mazeTable" class="Mazetable">
                         <tr id="column1">
                             <td id="cell1" style="height:32px; border-bottom:none; border-right:none;"></td>
                             <td id="cell2" style="border-left:none; border-right:none"></td>
@@ -1377,10 +1498,10 @@
                                 <div class="characterHealth"></div>
 
                                 <div class="characterItems">
-                                    <div class="itemOne"></div>
-                                    <div class="itemTwo"></div>
-                                    <div class="itemThree"></div>
-                                    <div class="itemFour"></div>
+                                    <div class="itemOne" id = "item1" onclick = "itemselect(0)" style = "z-index:9; color:white;">0</div>
+                                    <div class="itemTwo" id = "item2" onclick = "itemselect(1)" style = "z-index:9; color:white;">0</div>
+                                    <div class="itemThree" id = "item3" onclick = "itemselect(2)" style = "z-index:9; color:white;">0</div>
+                                    <div class="itemFour" id = "item4" onclick = "itemselect(3)" style = "z-index:9; color:white;">0</div>
                                 </div>
                             </div>
                         </div>
